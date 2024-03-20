@@ -1,0 +1,7 @@
+@if(pokemonResponse$ | async; as pokemonObject) {
+    <div class="container grid-container">
+        @for(pokemon of pokemonObject.results; track pokemon.name) {
+            <app-pokemon-card [pokemonData]="pokemon"></app-pokemon-card>
+        }
+    </div>
+}
