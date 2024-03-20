@@ -4,4 +4,9 @@
             <app-pokemon-card [pokemonData]="pokemon"></app-pokemon-card>
         }
     </div>
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-center pb-5">
+        <button class="btn btn-dark btn-large me-md-4" type="button" (click)="paginationPrevious()">{{ previousText }}</button>
+        <button class="btn btn-dark btn-large" type="button" (click)="paginationNext()">{{ nextText }}</button>
+    </div>
 }

@@ -1,17 +1,19 @@
 .header-container {
     width: 100%;
-    padding: 2rem 2rem;
+    padding: 1rem;
     background-color: #181818;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
 
     .pokemon-logo {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 1rem;
+
+        img {
+            width: 400px;
+        }
     }
     
     svg {
@@ -21,5 +23,6 @@
 
     input {
         width: 50%;
+        margin-bottom: 1rem;
     }
 }
