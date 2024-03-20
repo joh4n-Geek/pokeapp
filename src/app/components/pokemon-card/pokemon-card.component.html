@@ -1,8 +1,8 @@
-<div class="card" style="width: 18rem;">
-    <!-- <img src="..." class="card-img-top" alt="..."> -->
-    <div class="card-body">
-      <h5 class="card-title">{{ pokemonData.name }}</h5>
-      <!-- <p class="card-text">Some quick example text to build on the card title</p> -->
-      <a href="pokemonData.url" class="btn btn-primary">Details</a>
-    </div>
+<div class="card card-container">
+  <div class="pokeball">
+    <div class="pokeball-btn"></div>
+  </div>
+  <div class="card-body">
+    <a [href]="pokemonData.url" class="card-btn" target="#">{{ pokemonData.name }}</a>
+  </div>
 </div>

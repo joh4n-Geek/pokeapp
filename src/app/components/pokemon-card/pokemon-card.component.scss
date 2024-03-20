@@ -1,0 +1,72 @@
+@import url("https://fonts.cdnfonts.com/css/pokemon-solid");
+
+.card-container {
+    padding: 10px;
+    /* Glassmorphism effect */
+    box-shadow: 0px 0px 30px #000;
+    // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    .pokeball {
+        position: relative;
+        width: 220px;
+        height: 220px;
+        background: #fff;
+        border: 5px solid #000;
+        border-radius: 50%;
+        overflow: hidden;
+    
+        &::before {
+            content: "";
+            position: absolute;
+            background-color: #cc0000;
+            width: 100%;
+            height: 50%;
+        }
+    
+        &::after {
+            content: "";
+            position: absolute;
+            top: calc(50% - 3px);
+            width: 100%;
+            height: 50%;
+            background: #fff;
+            border-top: 5px solid;
+        }
+    
+        .pokeball-btn {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border: 4px solid;
+            border-radius: 50px;
+            top: calc(50% - 15px - 4px);
+            left: calc(50% - 15px - 4px);
+            z-index: 10;
+            background: #fff;
+            box-shadow: 0 0 0 2px #000;
+        }
+    }
+
+    .card-body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .card-btn {
+            font-family: "Pokemon Solid", sans-serif;
+            text-align: center;
+            color: #ffde00;
+            background-color: #cc0000;
+            border-radius: 5px;
+            border: 3px solid #000;
+            padding: 10px;
+            text-transform: capitalize;
+            text-decoration: none;
+        }
+    }
+}
