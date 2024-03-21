@@ -1,8 +1,8 @@
-<div class="card card-container">
+<div class="card card-container animate__animated animate__fadeIn">
   <div class="pokeball">
     <div class="pokeball-btn"></div>
   </div>
   <div class="card-body">
-    <a [href]="pokemonData.url" class="card-btn" target="#">{{ pokemonData.name }}</a>
+    <a class="card-btn" (click)="onClickButton(pokemonData.name)">{{ pokemonData.name }}</a>
   </div>
 </div>

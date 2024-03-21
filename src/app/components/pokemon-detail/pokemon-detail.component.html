@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="pokemon-detail">
+        <div class="row">
+            <div class="col-md-6">
+                <img [src]="pokemonResultObject.imageUrl" [alt]="pokemonResultObject.name">
+            </div>
+            <div class="col-md-6">
+                <div class="pokemon-information">
+                    <h1>Pokémon: <span>{{ pokemonResultObject.name }}</span></h1>
+                    <h3>Descripción:</h3>
+                    <p>{{ pokemonResultObject.description }}</p>
+                    <h3>Especie: <span>{{ pokemonResultObject.specie }}</span></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
