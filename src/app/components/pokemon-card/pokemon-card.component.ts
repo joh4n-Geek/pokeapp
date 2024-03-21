@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Pokemon } from '../../interfaces/pokemon';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pokemon-card',
@@ -10,4 +11,10 @@ import { Pokemon } from '../../interfaces/pokemon';
 })
 export class PokemonCardComponent {
   @Input() pokemonData!: Pokemon;
+
+  constructor(private router: Router) {}
+
+  onClickButton(name: string) {
+    this.router.navigate(['/pokemonDetail', name]);
+  }
 }

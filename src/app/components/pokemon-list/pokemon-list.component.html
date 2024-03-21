@@ -1,3 +1,7 @@
+<div class="container">
+    <app-search-bar (searchTextEmitter)="onChangeSearchInput($event)"></app-search-bar>
+</div>
+
 @if(pokemonResponse$ | async; as pokemonObject) {
     <div class="container grid-container">
         @for(pokemon of pokemonObject.results; track pokemon.name) {
